@@ -8,10 +8,14 @@
 public class App {
 
     public static void main(String[] args) {
-        System.out.println(getMsg());
+        System.out.println(getMsg("My"));
     }
 
-    public static String getMsg(){
-        return "Hello World!";
+    public static String getMsg(String my){
+        return String.format("%s say: 'Hello world!'", my);
+    }
+
+    public static void mySay(String my){
+        System.out.println(getMsg(my));
     }
 }
